@@ -59,7 +59,7 @@ class ManagerAccount{
    }
    async creatAccount(){
     try {
-        await AccountModel.create({
+        const account = await AccountModel.create({
             userId:this.userId,
             accountNumber:this.accountNumber,
             accountType:this.accountType,
